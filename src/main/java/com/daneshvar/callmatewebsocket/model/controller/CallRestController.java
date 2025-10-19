@@ -17,10 +17,10 @@ public class CallRestController {
 
     @PostMapping("/start")
     public void startCall(@RequestBody CallSignal signal) {
-        // مثلاً فقط برای ثبت یا لاگ اولیه
+       
         System.out.println("Start call from " + signal.getFromId() + " to " + signal.getToId());
 
-        // بفرست برای کاربر هدف
+        
         messagingTemplate.convertAndSendToUser(signal.getToId(), "/queue/call", signal);
     }
 }
