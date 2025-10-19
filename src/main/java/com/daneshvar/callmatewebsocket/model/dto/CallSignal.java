@@ -4,7 +4,7 @@ public class CallSignal {
     private String type;   // call_request, call_answer, ice_candidate, hangup
     private String fromId;
     private String toId;
-    private String sdp;    // برای WebRTC offer/answer
+    private String sdp;    
     private String candidate; // ICE candidate
     private Object data;
 
