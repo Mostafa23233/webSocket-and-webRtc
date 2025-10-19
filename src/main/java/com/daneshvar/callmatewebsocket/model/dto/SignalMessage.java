@@ -5,9 +5,9 @@ public class SignalMessage {
     private String fromId;
     private String toId;
     private String type;
-    private Object data; // می‌تونه SDP یا ICE candidate باشه
+    private Object data; 
 
-    // getter و setter
+    
     public String getFromId() { return fromId; }
     public void setFromId(String fromId) { this.fromId = fromId; }
 
